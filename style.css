@@ -1,81 +1,39 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+/* Estilos mínimos para a página do campeonato */
+:root{
+  --bg:#f7f7f7;
+  --accent:#0b6bd6;
+  --text:#222;
+  --max-width:900px;
 }
 
-h1 {
-  color: #333;
+html,body{height:100%;}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding:24px;
 }
 
-table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  width: 95%;
-  max-width: 1100px;
-  background: white;
+main{
+  background:#fff;
+  box-shadow:0 6px 18px rgba(10,10,10,0.08);
+  border-radius:8px;
+  padding:20px;
+  max-width:var(--max-width);
+  width:100%;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
+header{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  margin-bottom:12px;
 }
 
-th {
-  background-color: #333;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-form {
-  margin: 20px auto;
-  padding: 15px;
-  background: white;
-  width: 95%;
-  max-width: 800px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.linha-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-label {
-  min-width: 80px;
-  font-weight: bold;
-}
-
-input, select {
-  padding: 6px;
-  font-size: 14px;
-}
-
-button {
-  margin-top: 10px;
-  padding: 8px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #555;
-}
-
-/* Esconde o formulário de resultados até login */
-#formResultado {
-  display: none;
-}
+header img{max-width:120px; border-radius:6px;}
+h1{font-size:1.4rem; margin:0; color:var(--accent);} 
+p{line-height:1.5; margin:0.2rem 0 0;}
